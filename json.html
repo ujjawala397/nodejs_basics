@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<body>
+<h2>create json page</h2>
+<p id="1">hello inida i'm here</p>
+<script>
+/*
+var txt= '{"name":"Meenal","age":20,"section":"K1627"}'
+var obj= JSON.parse(txt);
+document.write(obj.name);
+alert(obj.age);
+document.write("<br> section: "+ obj.section); 
+document.getElementById("1").innerHTML=obj.name + ":" + obj.age + ":" + obj.section;
+
+var txt= {"name":"Meenal","age":20,"section":"K1627"};
+var obj=JSON.stringify(txt);
+document.write(obj);
+
+var txt= '{"name":"Meenal","age":20,"section":"K1627","subjects":["CSE304","CSE332","INT219","INT404"]}'
+var obj=JSON.parse(txt);
+document.write(obj.subjects[0]);*/
+
+var superheroes={"squadName":"super hero quad",
+				 "homeTown":"metro city","formed":2016,
+				 "secretBase":"super tower",
+				 "active":true,
+				 "members":[{"name":"Molecule man","age":29,"secretIdentity":"dan jukes","powers":["radiation","turing","blast"]},
+							{"name":"Madam uppercut","age":39,"secretIdentity":"jan wilson","powers":["tonne punch","damage resistence","reflexes"]},
+							{"name":"Eternal flame","age":10000,"secretIdentity":"unknown","powers":["immortal","heat immunity","infero","teleportation"]}
+						   ]
+				}
+for(var i=0;i<=2;i++)
+{
+document.write("<br>"+superheroes.members[i].name+"<br>");
+for(var j:members.powers[])
+{
+document.write(superheroes.members[i].powers[j]+"<br>");
+}
+}
+</script>
+</body>
+</html>

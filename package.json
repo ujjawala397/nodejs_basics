@@ -1,0 +1,22 @@
+{
+  "name": "node-express",
+  "version": "1.0.0",
+  "description": "simple node examples",
+  "main": "Built-in.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "author": "Ujjawal Aggarwal",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "Node Express Examples"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "mongo": "^0.1.0",
+    "socket.io": "^2.3.0"
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+</head>
+<script>
+	function func()
+	{
+			x=document.getElementById("1").value;
+			y=document.getElementById("2").value;
+			document.getElementById("result").innerHTML=x*y;
+	}
+	function fun1()
+	{
+		x=document.getElementById("3").value;
+		y=document.getElementById("4").value;
+		document.getElementById("result1").innerHTML=x/y;
+		if(y==0)
+		{
+			alert("cannot divide by 0");
+		}
+
+	}
+
+	var age=window.prompt("enter age");
+	if(age<10)
+	{
+		alert("u r kid");
+
+	}
+	else if(age>10 && age<20)
+	{
+		alert("teenage");
+	}
+	else
+	{
+		alert("died");
+	}
+
+</script>
+
+<body>
+
+	Enter First number
+	<input type="number" id="1">
+	<br><br>
+	Enter Second number
+	<input type="number" id="2">
+	<br><br>
+	<button onclick="func()">Multiply</button>
+	<h3>result:<span id="result"></span></h3>
+
+	<h1> Divison</h1>
+
+	Enter First number
+	<input type="number" id="3">
+	<br><br>
+	Enter Second number
+	<input type="number" id="4">
+	<br><br>
+	<button onclick="fun1()">Divide</button>
+	<h3>result:<span id="result1"></span></h3>
+
+</body>
+</html>
