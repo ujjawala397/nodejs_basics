@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<body>
+ <input type="number"  name="first no." id="1">
+ <input type="number" name="second no." id="2"><br><br>
+<button onclick="func()">Add</button>
+<button onclick="func1()">Subtract</button>
+<button onclick="func2()">Multiply</button>
+<button onclick="func3()">Divide</button>
+<h2>Result : <span id="result"></span></h2>
+<br><br><br>
+<script>
+function func()
+{
+ x= document.getElementById("1").value;
+ y= document.getElementById("2").value;
+ x1=parseInt(x);
+ y1=parseInt(y);
+ z=x1+y1;
+ document.getElementById("result").innerHTML=z;
+}
+function func1()
+{
+ x= document.getElementById("1").value;
+ y= document.getElementById("2").value;
+ document.getElementById("result").innerHTML=x-y;
+}
+function func2()
+{
+ x= document.getElementById("1").value;
+ y= document.getElementById("2").value;
+ document.getElementById("result").innerHTML=x*y;
+}
+function func3()
+{
+ x= document.getElementById("1").value;
+ y= document.getElementById("2").value;
+ document.getElementById("result").innerHTML=x/y;
+ if(y==0)
+ {
+	window.alert("Number can not be divided by 0!");
+ }
+}
+</script>
+</body>
+</html>
