@@ -1,0 +1,18 @@
+<script src = "/socket.io/socket.io.js"></script>
+<script>
+  var socket = io(); // TIP: io() with no args does auto-discovery
+  function send(){
+  	var msg=document.getElementById('name').value;
+  	socket.emit('print',msg);
+  }
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hello</title>
+</head>
+<body>
+	<input type="text" id="name">
+	<button name="button" onclick="send()">send</button>
+</body>
+</html>
